@@ -23,16 +23,13 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           sudo apt-get update
           sudo apt-get upgrade -y
           echo "Checking if Java installation exists........................"
+          pwd
           java -version
           sudo apt install default-jre
           java -version
