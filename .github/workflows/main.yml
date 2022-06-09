@@ -30,7 +30,7 @@ jobs:
           sudo apt-get upgrade -y
           echo "Checking if Java installation exists........................"
           pwd
-          sudo apt install default-jre
+          sudo apt install default-jre -y
           java -version
-          sudo apt install default-jdk
+          sudo apt install default-jdk -y
           javac -version
