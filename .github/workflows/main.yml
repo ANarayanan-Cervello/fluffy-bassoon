@@ -28,16 +28,6 @@ jobs:
         env:
           myVar: 200
           
+        if: $myVar!=200
         run: |
-        
-          if $myVar!=200:
-            exit 1
-          
-          sudo apt-get update
-          sudo apt-get upgrade -y
-          echo "Checking if Java installation exists........................"
-          pwd
-          sudo apt install default-jre -y
-          java -version
-          sudo apt install default-jdk -y
-          javac -version
+          echo "Black Dog!"
