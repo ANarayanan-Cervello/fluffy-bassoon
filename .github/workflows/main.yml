@@ -29,6 +29,6 @@ jobs:
           myVar: 200
           
         run: |
-          f: $myVar==200
+          if: $myVar==200
           echo "Black Dog!"
           echo $myVar
