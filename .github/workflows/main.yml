@@ -26,15 +26,16 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         env:
-          myVar: 200
+          VAR: 200
           
         run: |
         
-          if [$myVar -eq 200]
+          if [[ $VAR -gt 10 ]]
           then
-            echo "Hello World"
-            exit 1
+            echo "The variable is greater than 10."
+          elif [[ $VAR -eq 10 ]]
+            then
+              echo "The variable is equal to 10."
+          else
+            echo "The variable is less than 10."
           fi
-          
-          echo "Black Dog!"
-          echo $myVar
