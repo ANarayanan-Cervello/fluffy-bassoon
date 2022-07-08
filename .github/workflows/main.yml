@@ -26,11 +26,11 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         env:
-            myVar: 200
+          myVar: 200
           
         run: |
+        
           if $myVar!=200:
-            echo "Errors:"
             exit 1
           
           sudo apt-get update
