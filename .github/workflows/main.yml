@@ -29,7 +29,7 @@ jobs:
             myVar: 200
           
         run: |
-          if ${myVar}!=200:
+          if $myVar!=200:
             echo "Errors:"
             exit 1
           
