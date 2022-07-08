@@ -28,9 +28,9 @@ jobs:
         run: |
           
           EXPORT STATUS_CODE = 500
-          if STATUS_CODE!=200:
+          if ${STATUS_CODE}!=200:
             echo "Errors:"
-            exit(1)
+            exit 1
           
           sudo apt-get update
           sudo apt-get upgrade -y
