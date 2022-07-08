@@ -27,7 +27,6 @@ jobs:
       - name: Run a multi-line script
         env:
           myVar: 200
-          
-        if: $myVar!=200
         run: |
           echo "Black Dog!"
+          echo $myVar
