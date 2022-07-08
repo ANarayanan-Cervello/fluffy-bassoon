@@ -27,7 +27,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           
-          EXPORT STATUS_CODE = 500
+          export STATUS_CODE = 500
           if ${STATUS_CODE}!=200:
             echo "Errors:"
             exit 1
