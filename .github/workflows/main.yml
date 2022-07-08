@@ -29,6 +29,9 @@ jobs:
           myVar: 200
           
         run: |
-          if: $myVar==200
+          if ${{myVar == 200}} then
+          echo "Hello World"
+          fi
+          exit 1
           echo "Black Dog!"
           echo $myVar
