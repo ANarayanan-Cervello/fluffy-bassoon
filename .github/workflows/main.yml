@@ -30,7 +30,7 @@ jobs:
           
         run: |
         
-          if [$myVar == 200]
+          if [$myVar -eq 200]
           then
             echo "Hello World"
             exit 1
